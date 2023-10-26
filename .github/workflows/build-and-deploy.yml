@@ -34,4 +34,4 @@ jobs:
             cd /root/${{ secrets.PROJECT_NAME }}
             git pull
             docker pull ${{ env.DOCKER_IMAGE }}
-            docker run -p 4321:80 --rm -d --name ${{ secrets.PROJECT_NAME }} ${{ env.DOCKER_IMAGE }}
+            docker run -p 4200:80 --rm -d --name ${{ secrets.PROJECT_NAME }} ${{ env.DOCKER_IMAGE }}

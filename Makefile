@@ -8,7 +8,7 @@ export SERVER_IP \
        SSH_KEY_PATH
 
 dev:
-	docker-compose -f docker-compose.yml up -d
+	docker-compose -f docker-compose.yml up
 
 down:
 	docker-compose down
@@ -26,7 +26,7 @@ connect-to-vps:
 	ssh -i ${SSH_KEY_PATH} root@${SERVER_IP}
 
 copy-id-pub:
-	pbcopy < ~/.ssh/id_rsa.pub
+	pbcopy < ~/.ssh/id_rsa_taiga.pub
 
 copy-id-private:
-	pbcopy < ~/.ssh/id_rsa
+	pbcopy < ~/.ssh/id_rsa_taiga
