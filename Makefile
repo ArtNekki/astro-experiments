@@ -8,7 +8,7 @@ export SERVER_IP \
        SSH_KEY_PATH
 
 dev:
-	docker-compose -f docker-compose.yml up
+	docker-compose -f docker-compose.yml up -d
 
 down:
 	docker-compose down
