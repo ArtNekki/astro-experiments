@@ -8,5 +8,5 @@ const products = ((await(response.json())).data) as IProduct[]
 ---
 
 <Layout title="Products">
-    {products.map(product => <Card  title={product.attributes.name} body={product.attributes.description} href={product.attributes.price}/>)}
+    {products.map(product => <Card  title={product.attributes.name} body={product.attributes.description} price={product.attributes.price}/>)}
 </Layout>
