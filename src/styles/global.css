@@ -35,15 +35,3 @@
         font-size: 0.67em;
     }
 }
-
-.wpcf7-form-control {
-    @apply border border-black p-2 w-full resize-none;
-}
-
-/*.wpcf7-form {*/
-/*    @apply max-w-sm mx-auto;*/
-/*}*/
-
-.wpcf7-submit {
-    @apply inline-block uppercase bg-event-horizon text-starlight font-bold tracking-[1.3px] rounded-full text-white bg-blast-off border-0 cursor-pointer py-3 px-6 w-full;
-}
