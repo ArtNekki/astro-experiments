@@ -30,3 +30,6 @@ copy-id-pub:
 
 copy-id-private:
 	pbcopy < ~/.ssh/id_rsa_taiga
+
+remove-dev-image:
+	docker rmi ${DOCKER_USERNAME}/${PROJECT_NAME}:dev
